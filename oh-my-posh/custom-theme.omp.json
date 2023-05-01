@@ -60,8 +60,9 @@
         {
           "foreground": "#4584b6",
           "properties": {
-            "display_mode": "context",
-            "fetch_virtual_env": true
+            "display_mode": "environment",
+            "fetch_virtual_env": true,
+			"home_enabled": true
           },
           "style": "plain",
           "template": "| \ue235 {{ .Venv }} ",
