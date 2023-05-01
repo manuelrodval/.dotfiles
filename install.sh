@@ -9,10 +9,14 @@ main(){
 
 	for file in "${symlink_files[@]}"
 	do
-		source_file="${pwd}/$file"
-		target_file="$HOME/$file"
+		source_file="${PWD}/$file"
+		target_file="$HOME/.config/$file"
 		ln -fs $source_file $target_file
 	done
+
+	local source_bash="source $HOME/.config/.bashrc"
+	local bashrc_file="$HOME/.bashrc"
+	grep -qxF "$source_bash" $bashrc_file || (echo -e "\n# Source config files" >> "$bashrc_file" && echo $source_bash >> "$bashrc_file")
 }
 
 main
