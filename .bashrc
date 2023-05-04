@@ -2,7 +2,7 @@
 eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/custom-theme.omp.json)"
 
 # Start Folder
-cd ~
+cd ~ || return
 
 # Tmux Source
 if [ -z "$TMUX" ]; then
@@ -10,9 +10,12 @@ if [ -z "$TMUX" ]; then
 fi
 
 tmux source-file ~/.config/tmux/.tmux.conf
+tmux set -g mouse on
 
 # Z.sh
-. ~/.zsh/z.sh
+if [ -e "$HOME/.zsh/z.sh" ]; then
+	"$HOME/.zsh/z.sh"
+fi
 
 # Navigation
 alias ..="cd .."
@@ -28,5 +31,10 @@ alias vim="nvim"
 
 # Functions
 function mkd() {
-	mkdir -p "$@" && cd "$_";
+	mkdir -p "$@" && (cd "$_" || return);
 }
+
+# Poetry Path
+if [ -e "$HOME/.local/bin:$PATH" ]; then
+	export PATH="$HOME/.local/bin:$PATH"
+fi
