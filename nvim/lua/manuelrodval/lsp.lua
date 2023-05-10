@@ -76,7 +76,7 @@ lsp.setup()
 
 vim.diagnostic.config({
 	virtual_text = true,
-	open_float=true,
+	open_float = true,
 })
 
 -- Formatter

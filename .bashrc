@@ -10,11 +10,10 @@ if [ -z "$TMUX" ]; then
 fi
 
 tmux source-file ~/.config/tmux/.tmux.conf
-tmux set -g mouse on
 
 # Z.sh
 if [ -e "$HOME/.zsh/z.sh" ]; then
-	"$HOME/.zsh/z.sh"
+	. "$HOME/.zsh/z.sh"
 fi
 
 # Navigation
