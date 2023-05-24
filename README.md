@@ -1,5 +1,5 @@
 # manuelrodval's config files
-Config giles for WSL2. In case you intend to utilize these configurations, I suggest thoroughly reviewing the code and removing any unnecessary or undesirable stuff.
+Config files for WSL2. In case you intend to utilize these configurations, I suggest thoroughly reviewing the code and removing any unnecessary or undesirable stuff.
 
 ## Prerequisites:
 - [Oh My Posh](https://ohmyposh.dev/) (Optional)
