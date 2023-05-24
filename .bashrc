@@ -1,8 +1,11 @@
 # Oh my Posh config
-eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/custom-theme.omp.json)"
+#eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/custom-theme.omp.json)"
+
+# Starship??
+eval "$(starship init bash)"
 
 # Start Folder
-cd ~ || return
+# cd ~ || return
 
 # Tmux Source
 if [ -z "$TMUX" ]; then

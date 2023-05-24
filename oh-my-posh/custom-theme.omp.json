@@ -68,6 +68,11 @@
           "template": "| \ue235 {{ .Venv }} ",
           "type": "python"
         },
+		{
+		  "type": "rust",
+		  "style": "plain",
+		  "template": " |  {{ .Full }} "
+		},
         {
           "foreground_templates": [
             "{{if eq \"Charging\" .State.String}}#4caf50{{end}}",

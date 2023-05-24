@@ -1,0 +1,45 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Format prompt
+format = """
+$all\
+$fill\
+$username\
+$time\
+$line_break\
+$character
+"""
+
+[fill]
+symbol=" "
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] 
+success_symbol = '[➜](bold green)'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[conda]
+ignore_base = false
+
+[memory_usage]
+disabled = false
+
+# rhs
+[username]
+style_user = "bold bright-black"
+style_root = "bold red"
+format = "[$user]($style) |"
+disabled = false
+show_always = true
+
+[time]
+disabled = false
+style = "bold bright-black"
+format = " [$time]($style) "
