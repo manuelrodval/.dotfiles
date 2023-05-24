@@ -1,6 +1,6 @@
 #!/bin/bash
 
-symlink_files=("nvim" "oh-my-posh" "tmux" ".bashrc")
+symlink_files=("nvim" "oh-my-posh" "tmux" ".bashrc" "starship.toml")
 
 main(){
 	local file=""

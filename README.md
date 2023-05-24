@@ -2,7 +2,8 @@
 Config giles for WSL2. In case you intend to utilize these configurations, I suggest thoroughly reviewing the code and removing any unnecessary or undesirable stuff.
 
 ## Prerequisites:
-- [Oh My Posh](https://ohmyposh.dev/)
+- [Oh My Posh](https://ohmyposh.dev/) (Optional)
+- [Starship](https://github.com/starship/starship)
 - [Packer](https://github.com/wbthomason/packer.nvim)
 - [TMUX](https://github.com/tmux/tmux)
 - [z-jump-around](https://github.com/rupa/z)
