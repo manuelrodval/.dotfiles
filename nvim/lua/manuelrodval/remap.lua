@@ -11,7 +11,7 @@ vim.keymap.set("v", "<A-k>", ":m '<-2<cr>gv=gv")
 
 -- Todo Trouble
 vim.keymap.set("n", "<leader>tt", ":TroubleToggle<cr>")
-vim.keymap.set("n", "<leader>ft", ":TodoTelescope<cr>")
+vim.keymap.set("n", "<leader>td", ":TodoTelescope<cr>")
 
 -- Write quit typo correction
 vim.cmd("command! W w")
